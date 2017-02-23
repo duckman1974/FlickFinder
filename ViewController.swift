@@ -132,7 +132,7 @@ class ViewController: UIViewController {
         // create network request
         let task = session.dataTask(with: request) { (data, response, error) in
             if error == nil {
-                print(data as Any)
+                print(data as Any) // I've tried print(data) and print(data!) and print(data as Any) but still get the error
             } else {
                 print(error!.localizedDescription)
             }
